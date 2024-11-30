@@ -8,56 +8,6 @@ Sample output
 
 ```
 Sentence:  Hola, como estas?
-Sentence Breakdown:  ['hola,', 'como', 'estas']
-(False, 'Noun phrase not found.')
-
-
-Sentence:  El gato grande come pescado.
-Sentence Breakdown:  ['el', 'gato', 'grande', 'come', 'pescado']
-(True, 'The sentence is grammatically correct.')
-
-
-Sentence:  El niño come una manzana.
-Sentence Breakdown:  ['el', 'niño', 'come', 'una', 'manzana']
-(True, 'The sentence is grammatically correct.')
-
-
-Sentence:  La niña corre en el parque.
-Sentence Breakdown:  ['la', 'niña', 'corre', 'en', 'el', 'parque']
-(True, 'The sentence is grammatically correct.')
-
-
-Sentence:  El libro es interesante.
-Sentence Breakdown:  ['el', 'libro', 'es', 'interesante']
-(True, 'The sentence is grammatically correct.')
-
-
-Sentence:  El habla rápidamente.
-Sentence Breakdown:  ['el', 'habla', 'rápidamente']
-(True, 'The sentence is grammatically correct.')
-
-
-Sentence:  La casa es bonita.
-Sentence Breakdown:  ['la', 'casa', 'es', 'bonita']
-(True, 'The sentence is grammatically correct.')
-
-
-Sentence:  El perro pequeño corre rápido.
-Sentence Breakdown:  ['el', 'perro', 'pequeño', 'corre', 'rápido']
-(True, 'The sentence is grammatically correct.')
-
-
-Sentence:  El árbol grande está en el jardín.
-Sentence Breakdown:  ['el', 'árbol', 'grande', 'está', 'en', 'el', 'jardín']
-(True, 'The sentence is grammatically correct.')
-
-
-Sentence:  La escuela sin niños está cerrada.
-Sentence Breakdown:  ['la', 'escuela', 'sin', 'niños', 'está', 'cerrada']
-(False, 'Verb not found or not conjugated correctly.')
-❯ python3 main.py
-Starting grammar check...
-Sentence:  Hola, como estas?
 (False, 'Sentence must end with a period.')
 
 
