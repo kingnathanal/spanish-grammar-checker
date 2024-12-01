@@ -7,9 +7,6 @@ def main():
     # Create a SpanishGrammerChecker object
     sp = checker.SpanishGrammarChecker()
 
-    # Load the Spanish grammar rules
-    #sp.load_grammar_rules()
-
     # Check the grammar of a sentence
     test1 = sp.check_sentence("Hola, como estas?") # Hello, how are you?
     print(test1)
