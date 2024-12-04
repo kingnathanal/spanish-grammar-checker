@@ -47,4 +47,7 @@ def main():
     test10 = sp.check_sentence("La escuela sin niños está cerrada.") # The school without children is closed.
     print(test10)
 
+    test11 = sp.check_sentence("La casa grande.") # The big house.
+    print(test10)
+
 main()

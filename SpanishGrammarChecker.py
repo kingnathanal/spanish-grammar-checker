@@ -28,7 +28,8 @@ class SpanishGrammarChecker:
     def parse_sentence(self, words):
         print("Sentence Breakdown: ",words)
         words = self.parse_noun_phrase(words)
-        words = self.parse_verb(words)
+        if words:
+            words = self.parse_verb(words)
         if words:  # Optional complement
             words = self.parse_complement(words)
         if words:
