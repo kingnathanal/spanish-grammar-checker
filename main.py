@@ -48,6 +48,6 @@ def main():
     print(test10)
 
     test11 = sp.check_sentence("La casa grande.") # The big house.
-    print(test10)
+    print(test11)
 
 main()
