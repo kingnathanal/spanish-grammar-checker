@@ -30,10 +30,10 @@ class SpanishGrammarChecker:
         words = self.parse_noun_phrase(words)
         if words:
             words = self.parse_verb(words)
-        if words:  # Optional complement
+        #if words:  # Optional complement
+        #    words = self.parse_complement(words)
+        while words:
             words = self.parse_complement(words)
-        if words:
-            raise ValueError("Extra words at the end of the sentence.")
         return words
 
     def parse_noun_phrase(self, words):

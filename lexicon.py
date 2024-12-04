@@ -1,7 +1,7 @@
 
 determiners = {"el", "la", "los", "las", "un", "una", "unos", "unas"}
 
-nouns = {"gato", "perro", "niño", "niña", "libro", "coche", "escuela", "manzana", "pescado", "árbol", "casa", "habla", "parque", "jardín", "escuela", "niños"}
+nouns = {"gato", "perro", "niño", "niña", "libro", "coche", "escuela", "manzana", "pescado", "árbol", "casa", "habla", "parque", "jardín", "escuela", "niños", "hombre", "amiga"}
 
 adjectives = {"grande", "pequeño", "bonito", "rápido", "hermoso", "interesante", "bonita"}
 
@@ -15,6 +15,8 @@ verbs = {
     "estar": ["estoy", "estás", "está", "estamos", "estáis", "están"],
     "ser": ["soy", "eres", "es", "somos", "sois", "son"],
     "rapidamente": ["rápidamente"],
+    "correr": ["corro", "corres", "corre", "corremos", "corréis", "corren", "corriendo"],
+    "jugar": ["juego", "juegas", "juega", "jugamos", "jugáis", "juegan"],
 }
 
 irregular_verbs = {"ser", "estar", "tener", "hacer", "ir", "poder", "decir", "venir"}

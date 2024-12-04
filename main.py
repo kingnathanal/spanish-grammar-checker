@@ -44,12 +44,16 @@ def main():
     print(test9)
     print("\n")
 
-    test10 = sp.check_sentence("La escuela sin niños está cerrada.") # The school without children is closed.
+    test10 = sp.check_sentence("La casa grande.") # The big house.
     print(test10)
     print("\n")
 
-    test11 = sp.check_sentence("La casa grande.") # The big house.
+    test11 = sp.check_sentence("La niña juega en el parque con un amiga.") # The girl plays in the park with a friend.
     print(test11)
+    print("\n")
+
+    test12 = sp.check_sentence("el corriendo hombre.") # The running man
+    print(test12)
     print("\n")
 
 main()
