@@ -37,9 +37,9 @@ class SpanishGrammarChecker:
         return words
 
     def parse_noun_phrase(self, words):
-        if words[0] in self.determiners:
+        if words[0] in self.determiners: # Optional determiner
             words = words[1:]
-            if words[0] in self.nouns:
+            if words[0] in self.nouns: # Noun expected after determiner
                 words = words[1:]
                 if words and words[0] in self.adjectives:  # Optional adjective
                     words = words[1:]
@@ -53,15 +53,15 @@ class SpanishGrammarChecker:
 
     def parse_verb(self, words):
         for verb_forms in self.verbs.values():
-            if words[0] in verb_forms:
+            if words[0] in verb_forms: # Check for a verb
                 return words[1:]
         raise ValueError("Verb not found or not conjugated correctly.")
 
     def parse_complement(self, words):
-        if words[0] in self.determiners or words[0] in self.prepositions:
+        if words[0] in self.determiners or words[0] in self.prepositions: # Optional determiner or preposition
             return self.parse_noun_phrase(words[1:])
-        elif words[0] in self.adjectives:
+        elif words[0] in self.adjectives: # Optional adjective
             return words[1:]
-        elif words[0] in self.nouns:
+        elif words[0] in self.nouns: # Allow standalone noun
             return words[1:]
         raise ValueError("Invalid complement structure.")
