@@ -30,8 +30,6 @@ class SpanishGrammarChecker:
         words = self.parse_noun_phrase(words)
         if words:
             words = self.parse_verb(words)
-        else:
-            raise ValueError("Verb not found.")
         if words:  # Optional complement
             words = self.parse_complement(words)
         if words:
