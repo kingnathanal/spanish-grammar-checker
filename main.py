@@ -52,7 +52,7 @@ def main():
     print(test11)
     print("\n")
 
-    test12 = sp.check_sentence("el corriendo hombre.") # The running man
+    test12 = sp.check_sentence("el hombre corriendo.") # The running man
     print(test12)
     print("\n")
 
